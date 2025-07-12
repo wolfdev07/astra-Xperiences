@@ -1,0 +1,12 @@
+/* Importa las directivas base de Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definimos estilos base para el cuerpo de la página */
+@layer base {
+  body {
+    @apply bg-dark-bg text-gray-200 antialiased;
+    font-family: 'Inter', sans-serif; /* Usamos una fuente moderna y legible */
+  }
+}
