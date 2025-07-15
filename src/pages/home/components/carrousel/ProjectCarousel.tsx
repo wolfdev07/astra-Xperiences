@@ -2,19 +2,19 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Autoplay, Pagination } from 'swiper/modules';
 
+import swipper_1 from '../../../../assets/img/swipper_1.png'
+import swipper_2 from '../../../../assets/img/swipper_2.png'
+import swipper_3 from '../../../../assets/img/swipper_3.png'
+import swipper_4 from '../../../../assets/img/swipper_4.png'
+import swipper_5 from '../../../../assets/img/swipper_5.png'
+
 // Importa los estilos de Swiper
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 // Array de imágenes de ejemplo para el carrusel
-const projectImages = [
-  'https://placehold.co/1280x720/4285F4/FFFFFF?text=Proyecto+1',
-  'https://placehold.co/1280x720/9B27AF/FFFFFF?text=Proyecto+2',
-  'https://placehold.co/1280x720/34A853/FFFFFF?text=Proyecto+3',
-  'https://placehold.co/1280x720/EA4335/FFFFFF?text=Proyecto+4',
-  'https://placehold.co/1280x720/FBBC05/FFFFFF?text=Proyecto+5',
-];
+const projectImages = [ swipper_1, swipper_2, swipper_3, swipper_4, swipper_5, ];
 
 export const ProjectCarousel = () => {
   return (

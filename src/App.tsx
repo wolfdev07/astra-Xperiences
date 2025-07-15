@@ -10,9 +10,6 @@ import { AnimatedPage } from './components/layout/transition/AnimatedPage';
 import HomePage from './pages/home/HomePage';
 import PlansPage from './pages/plan/Plan';
 
-
-// Aquí podrías agregar en el futuro un Navbar y un Footer que se muestren en todas las páginas
-
 function App() {
   const location = useLocation()
   const [isLoading, setIsLoading] = useState(true);
@@ -23,8 +20,6 @@ function App() {
     }, 1500)
     return () => clearTimeout(timer);
   }, []);
-
-
 
   return (
     <>
