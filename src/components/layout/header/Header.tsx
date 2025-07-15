@@ -37,9 +37,8 @@ function Header() {
         
         {/* Lista de enlaces de navegación en el centro */}
         <ul className="relative z-10 flex items-center gap-4 sm:gap-6">
-          <li><Link to="/home" className="text-sm text-gray-300 hover:gemini-blue transition-colors duration-200">Inicio</Link></li>
-          <li><Link to="/projects" className="text-sm text-gray-300 hover:gemini-blue transition-colors duration-200">Planes</Link></li>
-          <li><Link to="/contact" className="text-sm text-gray-300 hover:gemini-blue transition-colors duration-200">Contacto</Link></li>
+          <li><Link to="/" className="text-sm text-gray-300 hover:gemini-blue transition-colors duration-200">Inicio</Link></li>
+          <li><Link to="/plans" className="text-sm text-gray-300 hover:gemini-blue transition-colors duration-200">Planes</Link></li>
         </ul>
 
         {/* Botón de prueba a la derecha */}
