@@ -91,7 +91,7 @@ export const PayModal = ({ plan, onClose }: PayModalProps) => {
         <div className="mt-6">
           {paymentMethod === 'transfer' && (
             <div className="space-y-3">
-              <p className="text-sm text-gray-300 mb-4">Realiza la transferencia a la siguiente cuenta y envía tu comprobante</p>
+              <p className="text-sm text-gray-300 mb-4">Realiza la transferencia a la siguiente cuenta y envía tu comprobante por WhatsApp</p>
               <CopyableRow label="Banco" value="BBVA" />
               <CopyableRow label="Cuenta" value="0474114299" />
               <CopyableRow label="Cuenta CLABE" value="012441004741142993" />
