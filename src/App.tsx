@@ -9,15 +9,16 @@ import { AnimatedPage } from './components/layout/transition/AnimatedPage';
 
 import HomePage from './pages/home/HomePage';
 import PlansPage from './pages/plan/Plan';
+import NotFoundPage from './pages/404/NotFoundPage';
 
 function App() {
-  const location = useLocation()
+  const location = useLocation();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer  = setTimeout(() => {
+    const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1500)
+    }, 1500);
     return () => clearTimeout(timer);
   }, []);
 
@@ -31,13 +32,10 @@ function App() {
         <Header />
 
         <main className="flex-grow">
-          {/* AnimatePresence gestiona la animación de entrada/salida de componentes */}
           <AnimatePresence mode="wait">
             {isLoading ? (
-              // Muestra la animación del logo mientras isLoading es true
               <TransitionLogo key="loader" />
             ) : (
-              // Cuando la carga termina, muestra las rutas animadas
               <Routes location={location} key={location.pathname}>
                 <Route
                   path="/"
@@ -55,6 +53,15 @@ function App() {
                     </AnimatedPage>
                   }
                 />
+                {/* 2. Añadir la ruta catch-all al final */}
+                <Route
+                  path="*"
+                  element={
+                    <AnimatedPage>
+                      <NotFoundPage />
+                    </AnimatedPage>
+                  }
+                />
               </Routes>
             )}
           </AnimatePresence>
@@ -62,7 +69,6 @@ function App() {
 
         <Footer />
 
-        {/* Efecto de fondo */}
         <div className="absolute inset-0 -z-10">
           <div className="absolute bottom-0 left-[-0%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(147,39,175,0.15),rgba(255,255,255,0))]"></div>
           <div className="absolute bottom-0 right-[-0%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(66,133,244,0.15),rgba(255,255,255,0))]"></div>
