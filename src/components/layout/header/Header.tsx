@@ -39,14 +39,14 @@ function Header() {
         <ul className="relative z-10 flex items-center gap-4 sm:gap-6">
           <li><Link to="/" className="text-sm text-gray-300 hover:gemini-blue transition-colors duration-200">Inicio</Link></li>
           <li><Link to="/plans" className="text-sm text-gray-300 hover:gemini-blue transition-colors duration-200">Planes</Link></li>
+          <li>
+            <button className="bg-gemini-blue/80 hover:bg-gemini-blue text-white text-sm font-bold py-2 px-4 rounded-full transition-colors duration-300">
+              Whatsapp
+            </button>
+          </li>
         </ul>
 
-        {/* Botón de prueba a la derecha */}
-        <div className="relative z-10">
-            <button className="bg-gemini-blue/80 hover:bg-gemini-blue text-white text-sm font-bold py-2 px-4 rounded-full transition-colors duration-300">
-              Acción
-            </button>
-        </div>
+
       </nav>
     </header>
   );

@@ -25,7 +25,7 @@ function HomePage() {
 
         {/* Párrafo descriptivo */}
         <p className="mx-auto mt-8 max-w-2xl text-g text-gray-400 md:text-xl">
-          Sitios web y apps visualmente impactantes, funcionales y listos para escalar tu negocio.
+          Impactante, Funcional y Escalable.
         </p>
 
         {/* Botón de llamada a la acción */}

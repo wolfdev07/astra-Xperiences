@@ -49,7 +49,7 @@ export const ProjectCarousel = () => {
         className="w-full h-auto"
       >
         {projectImages.map((src, index) => (
-          <SwiperSlide key={index} style={{ width: '75%', maxWidth: '600px' }}>
+          <SwiperSlide key={index} style={{ width: '80%', maxWidth: '600px' }}>
             <img 
               src={src} 
               alt={`Vista previa del proyecto ${index + 1}`} 
